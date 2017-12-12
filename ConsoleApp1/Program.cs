@@ -1,4 +1,5 @@
 ﻿using System;
+using ConsoleApp1.DataStructures;
 
 namespace ConsoleApp1
 {
@@ -6,7 +7,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var list = new LinkedList();
+            list.AddFirst(10);
+            list.AddFirst(30);
+            list.AddFirst(70);
+            list.AddLast(99);
+            list.PrintAllNodes();
+            Console.ReadKey();
         }
     }
 }
