@@ -7,11 +7,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            var list = new LinkedList();
-            list.AddFirst(10);
-            list.AddFirst(30);
-            list.AddFirst(70);
-            list.AddLast(99);
+            var list = new LinkedList<string>();
+            list.AddFirst("Hello");
+            list.AddFirst("Joel");
+            list.AddFirst("Name");
+            list.AddLast("Last");
             list.PrintAllNodes();
             Console.ReadKey();
         }

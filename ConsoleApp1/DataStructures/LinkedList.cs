@@ -5,12 +5,12 @@ using System.Text;
 namespace ConsoleApp1.DataStructures
 {
 
-    class LinkedList
+    class LinkedList<T>
     {
         private class Node
         {
-            public int data;
             public Node next;
+            public T data;
         }
 
         private Node head;
@@ -25,7 +25,7 @@ namespace ConsoleApp1.DataStructures
             }
         }
 
-        public void AddFirst(int data)
+        public void AddFirst(T data)
         {
             var temp = new Node
             {
@@ -35,7 +35,7 @@ namespace ConsoleApp1.DataStructures
             head = temp;
         }
 
-        public void AddLast(int data)
+        public void AddLast(T data)
         {
             if (head == null)
             {
