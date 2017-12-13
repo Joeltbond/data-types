@@ -43,11 +43,11 @@ namespace ConsoleApp1.DataStructures
             }
             else
             {
-                Node toAdd = new Node
+                var toAdd = new Node
                 {
                     data = data
                 };
-                Node current = head;
+                var current = head;
                 while (current.next != null)
                 {
                     current = current.next;
@@ -55,6 +55,17 @@ namespace ConsoleApp1.DataStructures
 
                 current.next = toAdd;
             }
+        }
+
+        public bool Includes(T data)
+        {
+            var current = head;
+            while (current != null && !current.data.Equals(data))
+            {
+                current = current.next;
+            }
+
+            return current != null;
         }
     }
 }

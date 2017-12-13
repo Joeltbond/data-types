@@ -13,6 +13,8 @@ namespace ConsoleApp1
             list.AddFirst("Name");
             list.AddLast("Last");
             list.PrintAllNodes();
+            Console.WriteLine(list.Includes("Joel"));
+            Console.WriteLine(list.Includes("Frank"));
             Console.ReadKey();
         }
     }
